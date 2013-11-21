@@ -1,0 +1,19 @@
+# Package Files #
+*.jar
+*.war
+*.ear
+# Log Files #
+*.log
+# Data Files #
+*.data
+out
+# intellij #
+*.iml
+.idea
+.idea_modules
+
+# sbt #
+lib/
+target/
+project/target
+project/project
