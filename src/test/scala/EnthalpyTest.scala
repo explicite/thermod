@@ -1,5 +1,5 @@
 import org.scalatest.FunSuite
-import termo.components._
+import termo.components.gas._
 
 /**
  * @author Jan Paw

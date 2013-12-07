@@ -1,4 +1,6 @@
-package termo.components
+package termo.components.gas
+
+import termo.components.Molecule
 
 /**
  * @author Jan Paw
