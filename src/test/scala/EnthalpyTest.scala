@@ -7,7 +7,7 @@ import termo.components.gas._
  */
 class EnthalpyTest extends FunSuite {
   test("Air enthalpy test") {
-    assert(Air.enthalpy(100) == -164.57860756747039)
+    assert(Air.enthalpy(100) == -165.28858897316414)
   }
 
   test("CO enthalpy test") {
@@ -32,5 +32,9 @@ class EnthalpyTest extends FunSuite {
 
   test("H20 enthalpy test") {
     assert(H2O.enthalpy(0.0) == -290.78831080045103)
+  }
+
+  test("SO2 enthalpy test") {
+    assert(SO2.enthalpy(0.0) == -385.3624168906458)
   }
 }
