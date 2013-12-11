@@ -1,3 +1,5 @@
+package termo
+
 import edu.termo.{SolidFuelCombustion, GasFuelCombustion}
 import termo.components._
 import java.util
@@ -75,7 +77,7 @@ object Main {
         val molecule = Molecule(moleculeList)
 
         def opt(t: Double): Double = if (molecule.enthalpy(t) >= i0) t else opt(t + 0.1)
-        println("calorimeter flame temperature: " + opt(0) + "°C")
+        println("calorimeter flame temperature: " + opt(1) + "°C")
       }
       case "2" => {
         print("Hydrogen: ")
@@ -144,7 +146,7 @@ object Main {
         val molecule = Molecule(moleculeList)
 
         def opt(t: Double): Double = if (molecule.enthalpy(t) >= i0) t else opt(t + 0.1)
-        println("calorimeter flame temperature: " + opt(0) + "°C")
+        println("calorimeter flame temperature: " + opt(1) + "°C")
       }
       case _ => println("ERROR")
     }

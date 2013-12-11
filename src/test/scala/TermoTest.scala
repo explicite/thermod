@@ -36,13 +36,13 @@ class TermoTest extends FunSuite {
       (fumes.get(WATER) / fumes.get(WET_FUMES), termo.components.gas.H2O),
       (fumes.get(NITROGEN) / fumes.get(WET_FUMES), termo.components.gas.N2)
     ))
-    
+
     println("CO2 -> " + fumes.get(CO2))
     println("WATER -> " + fumes.get(WATER))
     println("NITROGEN -> " + fumes.get(NITROGEN))
 
     def opt(t: Double): Double = if (fumesMolecule.enthalpy(t) >= i0) t else opt(t + 0.1)
 
-    assert(opt(1500) == 1912.199999999625)
+    assert(opt(1) == 1522.199999999711)
   }
 }

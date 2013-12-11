@@ -8,7 +8,7 @@ trait Enthalpy {
   /**
    * Reference temperature for enthalpies
    */
-  val T: Double = 273.15
+  val T: Double = 0.1
 
   /**
    * J/mol*K

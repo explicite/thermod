@@ -7,34 +7,34 @@ import termo.components.gas._
  */
 class EnthalpyTest extends FunSuite {
   test("Air enthalpy test") {
-    assert(Air.enthalpy(100) == -165.28858897316414)
+    assert(Air.enthalpy(24.85) == -73323.8103352424)
   }
 
   test("CO enthalpy test") {
-    assert(CO.enthalpy(0.0) == -344.9776604106791)
+    assert(CO.enthalpy(24.85) == 30.570061593840705)
   }
 
   test("CO2 enthalpy test") {
-    assert(CO2.enthalpy(0.0) == -497.43192086707825)
+    assert(CO2.enthalpy(24.85) == -365930.07502613484)
   }
 
   test("H2 enthalpy test") {
-    assert(H2.enthalpy(0.0) == -342.9625590239676)
+    assert(H2.enthalpy(24.85) == 30611.573700449047)
   }
 
   test("N2 enthalpy test") {
-    assert(N2.enthalpy(0.0) == -308.11534429780244)
+    assert(N2.enthalpy(24.85) == 30.106866031584527)
   }
 
   test("O2 enthalpy test") {
-    assert(O2.enthalpy(100.0) == -46.79810101742289)
+    assert(O2.enthalpy(24.85) == -349274.2607590826)
   }
 
   test("H20 enthalpy test") {
-    assert(H2O.enthalpy(0.0) == -290.78831080045103)
+    assert(H2O.enthalpy(24.85) == 47262.947840138106)
   }
 
   test("SO2 enthalpy test") {
-    assert(SO2.enthalpy(0.0) == -385.3624168906458)
+    assert(SO2.enthalpy(24.85) == 36.72251841093088)
   }
 }
